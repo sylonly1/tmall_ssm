@@ -11,10 +11,6 @@
         </if>
   </select>
 
-    <select id="total" resultType="int">
-        select count(*) from category
-    </select>
-
     <insert id="add" keyProperty="id" useGeneratedKeys="true">
         insert into category(name) values (#{name})
     </insert>
